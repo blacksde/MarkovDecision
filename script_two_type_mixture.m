@@ -1,4 +1,4 @@
-addpath 'C:\Users\Jasmine\Google Drive\miaomiaomiao!\miaomiao_project';
+addpath 'C:\Users\Jasmine\Documents\yzc\framework\MarkovDecision';
 runInitEV = 1;
 %%
 param.nMC = 5;
