@@ -2,7 +2,7 @@
 
 % sim settings
 T = 120;
-K = 5; % state space of x = 0, 1, ..., K
+K = 25;
 % parameters
 beta = 0.99;
 RC = 11.7;
@@ -14,12 +14,8 @@ c = @(x)(0.001*theta1*x);
 % nu(x, d) = -RC-c(x) if d = 1
 nu =@(x,d)(-d*RC-c(x));
 % transition density when d = 0(no replacement)
-% x_{t+1} = max{x_t + 1, K}
-F0 = diag(ones(K,1),1);
-F0(K+1,K+1)=1;
-% transition density when d = 1(with replacement)
-% x_{t+1} = 0
-F1 = [ones(K+1,1),zeros(K+1,K)];
+% x_{t+1} = max{x_t + 1, 25
+F0 = diag(repmat(1,N-1,1),1)
 
 
 
